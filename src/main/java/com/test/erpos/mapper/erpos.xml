@@ -4,6 +4,9 @@
 
 
 <mapper namespace="menu">
+	<select id="test" resultType="String">
+		select name from tbl_stock_category where seq =1
+	</select>
 
 </mapper>
 

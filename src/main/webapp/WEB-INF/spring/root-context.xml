@@ -10,7 +10,7 @@
 	-->
 	<bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
-		<property name="url" value="jdbc:oracle:thin:erpos.c9ijlf1ehqsq.us-east-2.rds.amazonaws.com:1521:xe"></property>
+		<property name="url" value="jdbc:oracle:thin:@erpos.c9ijlf1ehqsq.us-east-2.rds.amazonaws.com:1521:orcl"></property>
 		<property name="username" value="ERPOS"></property>
 		<property name="password" value="java1234"></property>
 	</bean>
