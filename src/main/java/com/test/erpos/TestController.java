@@ -18,8 +18,9 @@ public class TestController {
 		
 		
 
-		return "test";
+		return "hr.test";
 	}
+
 	
 	
 }
