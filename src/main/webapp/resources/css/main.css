@@ -2,7 +2,7 @@
 
 body, div, span, p, input, textarea, ul, ol, li, a, table, th, td, h1, h2, h3, h4, h5, h6, pre, code {
     font-family: 'BBTreeGR';	
-    font-size: 1.3em;
+/*     font-size: 1.3em; */
 }
 
 html, body {
@@ -20,6 +20,7 @@ html, body {
 	overflow-y: scroll;
 	color:#eee
 	float: left;
+	padding-left: 20px;
 }
 #footer {
 	width:100%;

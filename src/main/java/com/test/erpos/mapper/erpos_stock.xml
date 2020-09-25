@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="stock">
+	<select id="list" resultType="com.test.erpos.stock.StockDTO">
+		
+select s.*, c.name as category from tbl_stock s
+            inner join tbl_stock_category c
+            on c.seq = s.stock_category_seq order by s.seq
+
+	</select>
+
+	<insert id="order" parameterType="com.test.erpos.stock.OrderDTO"> 
+		insert into tbl_stock_order values (seq_stock_order.nextVal, #{qty}, #{orderdate}, '', #{stock_seq}, 0) 
+	</insert>
+	
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

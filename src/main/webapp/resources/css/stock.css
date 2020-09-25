@@ -1,0 +1,42 @@
+    #title {
+        border-left: 10px solid #666;
+        padding-left: 5px;
+    }
+    #main {
+        margin-top: 30px;
+
+    }
+
+    .table th{
+        background-color: #666;
+        text-align: center;
+    }
+    .table {
+            margin-top: 20px;
+            width: 700px;
+            text-align: center;
+            font-size: 1em;
+
+        }
+    .table td:nth-child(1){ width: 60px;}
+    .table td:nth-child(2){ width: auto; text-align: left;} 
+    .table td:nth-child(3){ width: 100px;} 
+    .table td:nth-child(4){ width: 60px;} 
+    .table td:nth-child(5){ width: 150px;} 
+
+    #category {
+        width: 500px;
+    }
+    .table tr:hover { 
+        background-color: #eee;
+        cursor: pointer;
+        }
+	
+	#stock_content {
+		margin-left: 300px;
+		
+	}
+    .madal-body {
+
+    }
+
