@@ -4,8 +4,8 @@
 
 
 <mapper namespace="hr">
-	<select id="test" resultType="String">
-		select name from tbl_stock_category where seq =1
+	<select id="list" resultType="com.test.erpos.hr.EmployeeDTO">
+		select * from tbl_employee where delflag = 0
 	</select>
 
 </mapper>

@@ -8,6 +8,22 @@
 	.container {
 		width: 1000px;
 	}
+	input[type='date'] {
+		width: 200px;
+		display: inline;
+		
+	}
+	.period-box {
+		height: 55px;
+		background-color: #eee;
+		width: 100%;
+		margin: 10px auto;
+		border-radius: 5px;
+		font-size: 0.8em;
+		vertical-align: middle;
+		padding-top: 10px;
+		padding-left: 10px;
+	}
 	table {
 		font-size : 0.6em;
 	}
@@ -26,30 +42,27 @@
 </style>
 <div id="content">
 	<div class="container">
-		<h1>직원 조회</h1>
-		<div>
-			<input type="button" class="btn btn-default right" value="+ 직원 추가" onclick="location.href='/erpos/hr/addemployee.action';">
+		<h1>출퇴근 기록 조회</h1>
+		
+		<div class="period-box">
+			기간 검색 : 
+			<input type="date" class="form-control"> ~ 
+			<input type="date" class="form-control">
+			<input type="button" class="btn btn-default" value="조회" >
 		</div>
 		<table class="table table-bordered table-hover">
 			<thead>
 			<tr>
 				<th>이름</th>
 				<th>직급</th>
-				<th>연락처</th>
-				<th>주소</th>
-				<th>상세보기</th>
+				<th>출근시각</th>
+				<th>확인</th>
+				<th>퇴근시각</th>
+				<th>확인</th>
 			</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${list}" var="dto">
-					<tr>
-						<td>${dto.name}</td>
-						<td>${dto.position}</td>
-						<td>${dto.tel}</td>
-						<td>${dto.address}</td>
-						<td><input type="button" class="btn btn-default" value="상세보기" onclick="location.href='/erpos/hr/viewemployee.action?seq=${dto.seq}';"></td>
-					</tr>
-				</c:forEach>
+
 			</tbody>
 		</table>
 	</div>
