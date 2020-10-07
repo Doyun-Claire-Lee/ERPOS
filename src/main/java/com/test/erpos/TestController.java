@@ -21,6 +21,13 @@ public class TestController {
 		return "hr.test";
 	}
 
-	
+	@RequestMapping(value = "/harim.action", method = { RequestMethod.GET })
+	public String test2(HttpServletRequest request, HttpServletResponse response) {
+		
+		
+		
+		
+		return "customerorder.test";
+	}
 	
 }
