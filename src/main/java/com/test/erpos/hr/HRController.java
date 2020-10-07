@@ -17,10 +17,10 @@ public class HRController {
 	private IHRService service;
 	
 	@RequestMapping(value = "/hr/list.action", method = { RequestMethod.GET })
-	public String hrList(HttpServletRequest request, HttpServletResponse response) {
-
+	public String hrList(HttpServletRequest request, HttpServletResponse response, String page) {
+		
 		//데이터 가져오기
-		List<EmployeeDTO> list = service.getList();
+		List<EmployeeDTO> list = service.getList(page);
 		
 		request.setAttribute("list", list);
 		return "hr.list";

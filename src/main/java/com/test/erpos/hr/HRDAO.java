@@ -1,5 +1,6 @@
 package com.test.erpos.hr;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -20,6 +21,11 @@ public class HRDAO {
 	public EmployeeDTO getEmployee(String seq) {
 
 		return template.selectOne("hr.employee");
+	}
+
+	public int getTotalCount(HashMap<String, String> map) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 	
 

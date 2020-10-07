@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface IHRService {
 
-	List<EmployeeDTO> getList();
+	List<EmployeeDTO> getList(String page);
 
 	EmployeeDTO getEmployee(String seq);
 
